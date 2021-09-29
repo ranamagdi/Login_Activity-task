@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/i"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create New Account"
+        android:textSize="32dp"
+        android:id="@+id/signup"
+        android:textColor="#9A0C3B"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/fn"
+        android:ems="6"
+        android:textStyle="bold"
+        android:inputType="text"
+        android:textSize="23dp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        android:hint="First Name"
+        android:textColorHint="#B28C98"
+        android:backgroundTintMode="src_over"
+        android:backgroundTint="#3C3537"
+
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/ln"
+        android:textStyle="bold"
+        android:ems="6"
+        android:inputType="text"
+        android:textSize="23dp"
+        app:layout_constraintStart_toEndOf="@+id/fn"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="100dp"
+        android:textColorHint="#B28C98"
+        android:hint="Last Name"
+        android:backgroundTintMode="src_over"
+        android:backgroundTint="#3C3537"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/phone"
+        android:textStyle="bold"
+        android:ems="13"
+        android:textSize="23dp"
+        android:inputType="phone"
+        app:layout_constraintStart_toStartOf="@+id/fn"
+        app:layout_constraintTop_toTopOf="@id/fn"
+        android:layout_marginTop="100dp"
+        android:textColorHint="#B28C98"
+        android:hint= "Phone Number"
+        android:backgroundTintMode="src_over"
+        android:backgroundTint="#3C3537"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/mEmail"
+        android:textStyle="bold"
+        android:ems="13"
+        android:textSize="23dp"
+        android:inputType="textEmailAddress"
+        app:layout_constraintStart_toStartOf="@+id/phone"
+        app:layout_constraintTop_toTopOf="@id/phone"
+        android:layout_marginTop="100dp"
+        android:textColorHint="#B28C98"
+        android:hint="Email"
+        android:backgroundTintMode="src_over"
+        android:backgroundTint="#3C3537"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/pass"
+        android:textStyle="bold"
+        android:ems="13"
+        android:textSize="23dp"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="@+id/mEmail"
+        app:layout_constraintTop_toTopOf="@id/mEmail"
+        android:layout_marginTop="100dp"
+        android:hint="Password"
+        android:textColorHint="#B28C98"
+        android:backgroundTintMode="src_over"
+        android:backgroundTint="#3C3537"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:id="@+id/Age"
+        android:textStyle="bold"
+        android:ems="13"
+        android:textSize="23dp"
+        android:inputType="datetime"
+        app:layout_constraintStart_toStartOf="@+id/pass"
+        app:layout_constraintTop_toTopOf="@id/pass"
+        android:layout_marginTop="100dp"
+        android:textColorHint="#B28C98"
+        android:hint="Age"
+        android:backgroundTintMode="src_over"
+        android:backgroundTint="#3C3537"
+        />
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toTopOf="@id/Age"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="100dp"
+        android:text="Submit"
+        android:id="@+id/submit"
+        android:backgroundTint="#750927"
+        android:textSize="20dp"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
